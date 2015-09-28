@@ -250,6 +250,7 @@ COMMIT
 Cloud-Monkey是用来方便的配置CloudStack的组件，用下列命令安装:    
 
 ```
+# wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-6.repo
 # yum install -y python-pip
 # pip install cloudmonkey
 ```

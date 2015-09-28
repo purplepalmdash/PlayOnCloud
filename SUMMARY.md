@@ -7,5 +7,6 @@
 	* [安装CloudStack](DeployCloudStack/InstallCloudStack.md)
 	* [二级存储](DeployCloudStack/SecondaryStorage.md)
 	* [配置CloudStack](DeployCloudStack/ConfigureCloudStack.md)
+	* [CloudStackAllInOne](DeployCloudStack/CloudStackAllInOne.md)
 * [相关工具](Tools/README.md)
 	* [Packer.io](Tools/PackerIO.md)
