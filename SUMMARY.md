@@ -10,5 +10,8 @@
 	* [注册模板](DeployCloudStack/RegisteTemplate.md)
 	* [注册ISO](DeployCloudStack/RegisteISO.md)
 	* [CloudStackAllInOne](DeployCloudStack/CloudStackAllInOne.md)
+* [CloudStack高阶](AdvancedCloudStack/README.md)
+	* [编译CloudStack DEB](AdvancedCloudStack/BuildCloudStackDEB.md)
+	* [编译CloudStack RPM](AdvancedCloudStack/BuildCloudStackRPM.md)
 * [相关工具](Tools/README.md)
 	* [Packer.io](Tools/PackerIO.md)
