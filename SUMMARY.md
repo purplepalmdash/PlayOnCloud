@@ -10,6 +10,7 @@
 	* [注册模板](DeployCloudStack/RegisteTemplate.md)
 	* [注册ISO](DeployCloudStack/RegisteISO.md)
 	* [CloudStackAllInOne](DeployCloudStack/CloudStackAllInOne.md)
+* [部署CloudStack-Ubuntu](DeployCloudStackUbuntu/README.md)
 * [管理CloudStack](AdminCloudStack/README.md)
 	* [Cloud-Init介绍](AdminCloudStack/CloudInitIntro.md)
 	* [Cloud-Init数据源](AdminCloudStack/CloudInitDataSource.md)
