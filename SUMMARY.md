@@ -15,6 +15,8 @@
 	* [准备包](DeployCloudStackUbuntu/PrepareDEB.md)
 	* [准备系统](DeployCloudStackUbuntu/PrepareSystem.md)
 	* [安装CloudStack](DeployCloudStackUbuntu/InstallCloudStack.md)
+* [单物理机配置CloudStack](SingleMachine/README.md)
+	* [Ubuntu主机](SingleMachine/Ubuntu.md)
 * [管理CloudStack](AdminCloudStack/README.md)
 	* [Cloud-Init介绍](AdminCloudStack/CloudInitIntro.md)
 	* [Cloud-Init数据源](AdminCloudStack/CloudInitDataSource.md)

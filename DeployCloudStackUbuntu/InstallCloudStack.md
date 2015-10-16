@@ -183,7 +183,7 @@ $ mount /mnt/secondary
 ```
 $ /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
     -m /mnt/secondary -u  \
-http://cloudstack.apt-get.eu/systemvm/4.4/systemvm64template-4.4.1-7-kvm.qcow2.bz2 \
+http://192.168.0.79/systemvm64template-4.5-kvm.qcow2.bz2 \ 
     -h kvm -F
 ```
 

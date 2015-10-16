@@ -301,4 +301,65 @@ $ mount /mnt/secondary
 # yum install -y cloudstack-agent
 ```
 
-配置过程要综合上面的。   
+需要更改掉以下配置中的选项后重启libvirtd:    
+
+```
+# sed -i 's/#vnc_listen = "0.0.0.0"/vnc_listen = "0.0.0.0"/g' \ 
+ /etc/libvirt/qemu.conf && sed -i 's/cgroup_ \ 
+ controllers=["cpu"]/#cgroup_controllers=["cpu"]/g' /etc/libvirt/qemu.conf
+# sed -i 's/#listen_tls = 0/listen_tls = 0/g' \ 
+  /etc/libvirt/libvirtd.conf && sed -i 's/#listen_tcp = 1/listen_tcp = 1/g' \
+  /etc/libvirt/libvirtd.conf && sed -i \ 
+ 's/#tcp_port = "16509"/tcp_port = "16509"/g' \
+ /etc/libvirt/libvirtd.conf && sed -i 's/#auth_tcp = "sasl"/auth_\
+ tcp = "none"/g' /etc/libvirt/libvirtd.conf && \
+ sed -i 's/#mdns_adv = 1/mdns_adv = 0/g' /etc/libvirt/libvirtd.conf
+# sed -i 's/#LIBVIRTD_ARGS="--listen"/LIBVIRTD_ARGS="--listen"/g' \
+ /etc/sysconfig/libvirtd 
+# sed -i '/cgroup_controllers/d' \
+  /usr/lib64/python2.7/site-packages/cloudutils/serviceConfig.py
+```
+
+重启libvirtd:    
+
+```
+# service libvirtd restart
+```
+
+### 配置
+添加一个基本的Zone:    
+
+![/images/2015_10_16_09_40_34_692x447.jpg](/images/2015_10_16_09_40_34_692x447.jpg)   
+
+设置DNS Server并选择kvm:    
+![/images/2015_10_16_09_44_17_566x519.jpg](/images/2015_10_16_09_44_17_566x519.jpg)    
+
+网络类型选择如下:    
+
+![/images/2015_10_16_09_45_33_483x275.jpg](/images/2015_10_16_09_45_33_483x275.jpg)    
+
+直接点击下一步，进入到POD配置:    
+
+![/images/2015_10_16_09_50_12_511x453.jpg](/images/2015_10_16_09_50_12_511x453.jpg)    
+
+Guest Traffic配置:   
+
+![/images/2015_10_16_09_51_10_484x331.jpg](/images/2015_10_16_09_51_10_484x331.jpg)    
+
+配置Cluster:    
+
+![/images/2015_10_16_09_55_36_482x231.jpg](/images/2015_10_16_09_55_36_482x231.jpg)   
+
+添加host:    
+
+![/images/2015_10_16_09_56_20_483x373.jpg](/images/2015_10_16_09_56_20_483x373.jpg)   
+
+添加主存储:    
+
+![/images/2015_10_16_09_57_04_593x467.jpg](/images/2015_10_16_09_57_04_593x467.jpg)    
+
+添加二级存储:    
+
+![/images/2015_10_16_09_58_05_520x372.jpg](/images/2015_10_16_09_58_05_520x372.jpg)    
+
+最后一步点击Launch Zone。CloudStack All In One的环境在CentOS 7上就搭建完毕了。
