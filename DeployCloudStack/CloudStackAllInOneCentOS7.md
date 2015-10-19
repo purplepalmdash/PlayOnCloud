@@ -227,7 +227,7 @@ root用户的访问密码:
 从epel仓库安装pip后，用pip安装cloudmonkey:   
 
 ```
-# wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-6.repo
+# wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
 # yum install -y python-pip
 # pip install cloudmonkey
 ```
