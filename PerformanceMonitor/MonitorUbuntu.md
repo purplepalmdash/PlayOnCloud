@@ -112,7 +112,7 @@ retentions = 60s:1d
 
 ```
 # apt-get install apache2 libapache2-mod-wsgi
-``
+```
 禁止000-default网站, 定义apache2-graphite条目并使能:   
 
 ```
