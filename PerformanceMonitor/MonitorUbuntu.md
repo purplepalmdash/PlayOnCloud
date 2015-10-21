@@ -239,5 +239,11 @@ Install, configure, and enable the collectd service:
 # systemctl enable collectd.service
 ```
 
+### Monitor CloudStack
+[https://github.com/exoscale/collectd-cloudstack](https://github.com/exoscale/collectd-cloudstack)    
+
+### Monitor Windows
+[http://ssc-serv.com/licensing.shtml](http://ssc-serv.com/licensing.shtml)    
+
 ### Customization
 Add new templates for graphite.   
