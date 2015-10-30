@@ -7,11 +7,32 @@
 	* [安装CloudStack](DeployCloudStack/InstallCloudStack.md)
 	* [二级存储](DeployCloudStack/SecondaryStorage.md)
 	* [配置CloudStack](DeployCloudStack/ConfigureCloudStack.md)
-<<<<<<< HEAD
-	* [CloudStackAllInOne](DeployCloudStack/CloudStackAllInOne.md)
-=======
 	* [注册模板](DeployCloudStack/RegisteTemplate.md)
 	* [注册ISO](DeployCloudStack/RegisteISO.md)
->>>>>>> 36d8c351a00c061bccce6cc24fbd22d6ee0d7a6e
+	* [CloudStackAllInOne](DeployCloudStack/CloudStackAllInOne.md)
+	* [CloudStackAllInOneCentOS7](DeployCloudStack/CloudStackAllInOneCentOS7.md)
+* [部署CloudStack-Ubuntu](DeployCloudStackUbuntu/README.md)
+	* [准备包](DeployCloudStackUbuntu/PrepareDEB.md)
+	* [准备系统](DeployCloudStackUbuntu/PrepareSystem.md)
+	* [安装CloudStack](DeployCloudStackUbuntu/InstallCloudStack.md)
+* [单物理机配置CloudStack](SingleMachine/README.md)
+	* [Ubuntu主机](SingleMachine/Ubuntu.md)
+* [管理CloudStack](AdminCloudStack/README.md)
+	* [Cloud-Init介绍](AdminCloudStack/CloudInitIntro.md)
+	* [Cloud-Init数据源](AdminCloudStack/CloudInitDataSource.md)
+	* [CloudStack与Cloud-Init](AdminCloudStack/CloudStackCloudInit.md)
+* [CloudStack高阶](AdvancedCloudStack/README.md)
+	* [编译CloudStack DEB](AdvancedCloudStack/BuildCloudStackDEB.md)
+	* [编译CloudStack RPM](AdvancedCloudStack/BuildCloudStackRPM.md)
+* [性能监控](PerformanceMonitor/README.md)
+	* [安装](PerformanceMonitor/Install.md)
+	* [Monitor Ubuntu](PerformanceMonitor/MonitorUbuntu.md)
+<<<<<<< HEAD
+* [OpenStack Liberty](OpenStackLiberty/README.md)
+	* [Ubuntu](OpenStackLiberty/OpenStackUbuntu.md)
+=======
+	* [Monitor CloudStack](PerformanceMonitor/MonitorCloudStack.md)
+>>>>>>> 68570cfc4ce9aa08c160cbc7d462d1f95d7e8718
 * [相关工具](Tools/README.md)
 	* [Packer.io](Tools/PackerIO.md)
+	* [Vagrant](Tools/Vagrant.md)
