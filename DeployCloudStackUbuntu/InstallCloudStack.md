@@ -145,7 +145,7 @@ Patch qemu.conf以监听所有端口:
 
 ```
 $ cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.orig
-$ sed -i '/# vnc_listen = "0.0.0.0"/ a vnc_listen = "0.0.0.0"' /etc/libvirt/qemu.conf
+$ sed -i '/#vnc_listen = "0.0.0.0"/ a vnc_listen = "0.0.0.0"' /etc/libvirt/qemu.conf
 $ diff -du /etc/libvirt/qemu.conf.orig /etc/libvirt/qemu.conf
 $ service libvirt-bin restart
 ```
