@@ -15,6 +15,8 @@
 	* [配置高级Zone](CloudStackAdvancedNetwork/Config.md)
 	* [配置VM](CloudStackAdvancedNetwork/ConfigVM.md)
 	* [轰炸VR](CloudStackAdvancedNetwork/BombingVR.md)
+	* [All-In-One VR测试](CloudStackAdvancedNetwork/AllInOneVR.md)
+	* [用防火墙保护CloudStack](CloudStackAdvancedNetwork/PhysicalFirewall.md)
 * [部署CloudStack-Ubuntu](DeployCloudStackUbuntu/README.md)
 	* [准备包](DeployCloudStackUbuntu/PrepareDEB.md)
 	* [准备系统](DeployCloudStackUbuntu/PrepareSystem.md)
