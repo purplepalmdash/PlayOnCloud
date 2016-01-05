@@ -210,3 +210,34 @@ service cloudstack-agent status
 
 ### 已知问题
 重启机器后可能会碰到404s错误，需要调整service的启动顺序---TBD.   
+
+如果出现`/var/run/cloudstack-agent.pid: No such file or directory`的错误，则通过以下命
+令来修复:    
+
+```
+root@ubuntucloudstack:~# service cloudstack-agent start
+ * Starting CloudStack Agent cloudstack-agent
+cat: /var/run/cloudstack-agent.pid: No such file or directory
+ * jsvc failed to start
+   ...fail!
+root@ubuntucloudstack:~# cloudstack-setup-agent
+Welcome to the CloudStack Agent Setup:
+Please input the Management Server Hostname/IP-Address:[localhost]10.168.100.10
+Please input the Zone Id:[default]
+Please input the Pod Id:[default]
+Please input the Cluster Id:[default]
+Please input the Hypervisor type kvm/lxc:[kvm]
+Please choose which network used to create VM:[cloudbr0]
+Starting to configure your system:
+Configure Apparmor ...        [OK]
+Configure Network ...         [OK]
+Configure Libvirt ...         [OK]
+Configure Firewall ...        [OK]
+Configure Nfs ...             [OK]
+Configure cloudAgent ...      [OK]
+CloudStack Agent setup is done!
+root@ubuntucloudstack:~# service cloudstack-agent start
+ * Starting CloudStack Agent cloudstack-agent
+   ...done.
+
+```
